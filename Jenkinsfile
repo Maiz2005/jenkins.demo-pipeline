@@ -13,9 +13,8 @@ pipeline {
       steps {
         sh 'cat /etc/os-release'
         sh 'ps -ef'
-        git 'https://github.com/jglick/simple-maven-project-with-tests.git'
         container('ubuntu') {
-          sh 'cat /etc/os-release'
+        sh 'cat /etc/os-release'
         }
 
       }
